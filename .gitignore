@@ -1,0 +1,14 @@
+# Build files #
+bin/CMakeFiles
+bin/*.log
+bin/Makefile
+bin/cmake_install.cmake
+bin/CMakeCache.txt
+CMakeLists.txt
+
+# File editing swaps #
+*~
+
+# KDevelop stuff #
+.kdev4
+*.kdev4
