@@ -1,0 +1,15 @@
+BombasticDesktop/Rectangle
+{
+    zorder 200
+
+    container BorderPanel(BombasticDesktop/Rectangle/BorderPanel)
+    {
+        // Center it horizontally, put it at the top
+        left 0.25
+        top 0
+        width 0.5
+        height 0.1
+        material BombasticDesktop/Rectangle
+    }
+}
+

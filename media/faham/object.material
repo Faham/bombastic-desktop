@@ -1,0 +1,93 @@
+material BombasticDesktop/Icon/Base
+{
+	receive_shadows off
+	
+	technique
+	{
+		pass
+		{
+			//scene_blend alpha_blend
+			//depth_write off
+			ambient $color
+			diffuse $color
+			specular $color
+	
+			texture_unit
+			{
+				texture $texture_file
+			}
+		}
+	}
+}
+
+//------------------------------------------------------------------------------
+
+material BombasticDesktop/Icon/Freeze : BombasticDesktop/Icon/Base
+{
+	set $texture_file ubuntu-folder-gray.png
+}
+
+//------------------------------------------------------------------------------
+
+material BombasticDesktop/Icon/Folder : BombasticDesktop/Icon/Base
+{
+	set $texture_file ubuntu-folder-yellow.png
+}
+
+material BombasticDesktop/Icon/Folder/Highlight : BombasticDesktop/Icon/Folder
+{
+	set $color "1.0 1.0 0.25"
+}
+
+//------------------------------------------------------------------------------
+
+material BombasticDesktop/Icon/Image : BombasticDesktop/Icon/Base
+{
+	set $texture_file ubuntu-folder-red.png
+}
+
+material BombasticDesktop/Icon/Image/Highlight : BombasticDesktop/Icon/Image
+{
+	set $color "1.0 1.0 0.25"
+	set $specular_color "1.0 1.0 0.25 30.0"
+}
+
+//------------------------------------------------------------------------------
+
+material BombasticDesktop/Icon/Audio : BombasticDesktop/Icon/Base
+{
+	set $texture_file ubuntu-folder-blue.png
+}
+
+material BombasticDesktop/Icon/Audio/Highlight : BombasticDesktop/Icon/Audio
+{
+	set $color "1.0 1.0 0.25"
+	set $specular_color "1.0 1.0 0.25 30.0"
+}
+
+//------------------------------------------------------------------------------
+
+material BombasticDesktop/Icon/Video : BombasticDesktop/Icon/Base
+{
+	set $texture_file ubuntu-folder-green.png
+}
+
+material BombasticDesktop/Icon/Video/Highlight : BombasticDesktop/Icon/Video
+{
+	set $color "1.0 1.0 0.25"
+	set $specular_color "1.0 1.0 0.25 30.0"
+}
+
+//------------------------------------------------------------------------------
+
+material BombasticDesktop/Icon/Document : BombasticDesktop/Icon/Base
+{
+	set $texture_file ubuntu-folder-purple.png
+}
+
+material BombasticDesktop/Icon/Document/Highlight : BombasticDesktop/Icon/Document
+{
+	set $color "1.0 1.0 0.25"
+	set $specular_color "1.0 1.0 0.25 30.0"
+}
+

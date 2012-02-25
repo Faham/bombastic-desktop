@@ -1,0 +1,27 @@
+material room/ground
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.05 0.30 0.90
+		}
+	}
+}
+
+material room/wall
+{
+	receive_shadows off
+
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture ubuntu-wall-2.png
+			}
+		}
+	}
+}
+

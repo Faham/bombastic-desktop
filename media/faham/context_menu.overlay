@@ -1,0 +1,14 @@
+ContextMenu/Group
+{
+    zorder 200
+
+    container BorderPanel(BombasticDesktop/ContextMenu/Group/BorderPanel)
+    {
+        left 0.25
+        top 0
+        width 0.5
+        height 0.1
+        material BombasticDesktop/Rectangle
+    }
+}
+

@@ -1,0 +1,40 @@
+material BombasticDesktop/Target/Base
+{
+	receive_shadows off
+
+	technique
+	{
+		pass
+		{
+			ambient $ambient_color
+			diffuse $ambient_color
+			specular $ambient_color
+		}
+	}
+}
+
+material BombasticDesktop/Target/Folder : BombasticDesktop/Target/Base
+{
+	set $ambient_color "1.0 1.0 0.0"
+}
+
+material BombasticDesktop/Target/Image : BombasticDesktop/Target/Base
+{
+	set $ambient_color "1.0 0.0 0.0"
+}
+
+material BombasticDesktop/Target/Video : BombasticDesktop/Target/Base
+{
+	set $ambient_color "0.0 1.0 0.0"
+}
+
+material BombasticDesktop/Target/Audio : BombasticDesktop/Target/Base
+{
+	set $ambient_color "0.0 0.0 1.0"
+}
+
+material BombasticDesktop/Target/Document : BombasticDesktop/Target/Base
+{
+	set $ambient_color "1.0 0.0 1.0"
+}
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<GUILayout >
+    <Window Type="DefaultWindow" Name="Root" >
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+		<Window Type="TaharezLook/Menubar" Name="Root/BatchSelect/Popup" >
+            <Property Name="ItemSpacing" Value="1" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0,0},{0.0,0},{0.2,0},{0.05,0}}" />
+			<Window Type="TaharezLook/MenuItem" Name="Root/BatchSelect/Popup/Pile" >
+				<Property Name="Text" Value="Pile" />
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+				<Property Name="UnifiedAreaRect" Value="{{0,2},{0,25},{0,32},{0,46}}" />
+			</Window>
+        </Window>
+		<Window Type="TaharezLook/Menubar" Name="Root/Pile/Popup" >
+            <Property Name="ItemSpacing" Value="1" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0,0},{0.0,0},{0.2,0},{0.05,0}}" />
+			<Window Type="TaharezLook/MenuItem" Name="Root/Pile/Popup/Unpile" >
+				<Property Name="Text" Value="Unpile" />
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+				<Property Name="UnifiedAreaRect" Value="{{0,2},{0,25},{0,32},{0,46}}" />
+			</Window>
+			<Window Type="TaharezLook/MenuItem" Name="Root/Pile/Popup/Grid" >
+				<Property Name="Text" Value="Grid" />
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+				<Property Name="UnifiedAreaRect" Value="{{0,2},{0,25},{0,32},{0,46}}" />
+			</Window>
+			<Window Type="TaharezLook/MenuItem" Name="Root/Pile/Popup/FanOut" >
+				<Property Name="Text" Value="FanOut" />
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+				<Property Name="UnifiedAreaRect" Value="{{0,2},{0,25},{0,32},{0,46}}" />
+			</Window>
+        </Window>
+    </Window>
+</GUILayout>
